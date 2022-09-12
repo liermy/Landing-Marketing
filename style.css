@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* ZERANDO O CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo Tela */
+
+html {
+    height: 80vw;
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(17,17,17, 0.8), rgba(20, 20, 20, 1)), url(./_img/code-1839406.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+
+/* Menu - Header - Nav */
+
+header {
+    width: 100%;
+    height: 7vw;
+    background: rgba(22, 22, 22, 0.2);
+}
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.logo {
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+}
+
+.menu-content .list-itens {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens a:before {
+    content:  ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: rgb(228, 220, 220);
+    transition: all 1.5s ease;
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+}
+
+/* Centro - Conteudp */
+
+main {
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Textos - Conteudo Principal */
+
+.primary-text {
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.second-text {
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+}
+
+/* botões */
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.btns button {
+    width: 350px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid rgb(228, 220, 220);
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+}
+
+.btns button:hover {
+    color: rgb(139, 133, 133);
+    border: none;
+}
+
+.btns button:before {
+    content: ' ';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(61, 61, 61);
+    z-index: -1;
+    transition: 1s;
+}
+
+.btns button:hover:before {
+    width: 100%;
+}
+
+/* rodape */
+
+footer#rodape {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    border-top: 1px solid rgb(226, 225, 225);
+    padding-top: 15px;
+    margin-top: 200px;
+}
